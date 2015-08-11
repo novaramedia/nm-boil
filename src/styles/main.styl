@@ -8,6 +8,28 @@
   height: 55px
   width: 55px
 
+@media screen and (max-width: ($col * $cols)+($gutter * $cols))
+
+  $gutter = 16px
+  $margin-tiny = ($gutter/2)
+  $margin-small = $gutter
+  $margin-basic = ($gutter*3)
+  $margin-large = ($gutter*5)
+
+  #pagination
+    margin: $margin-basic 0
+
+@media screen and (max-width: 1152px)
+
+  $gutter = 12px
+  $margin-tiny = ($gutter/2)
+  $margin-small = $gutter
+  $margin-basic = ($gutter*3)
+  $margin-large = ($gutter*5)
+
+  #pagination
+    margin: $margin-basic 0
+
 @media screen and (max-width: 912px)
 
   $gutter = 8px
