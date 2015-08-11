@@ -36,7 +36,7 @@ function errorNotify(error){
 /* SERVER */
 gulp.task('connect', function() {
   connect.server({
-    root: 'build',
+    root: './',
     port: 8008,
     livereload: true
   });
