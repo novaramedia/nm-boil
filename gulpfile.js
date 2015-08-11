@@ -43,7 +43,7 @@ gulp.task('connect', function() {
 });
 
 gulp.task('html', function () {
-  gulp.src('./build/*.html')
+  gulp.src('.index.html')
     .pipe(connect.reload())
     .pipe(notify({ message: 'HTML task complete' }));
 });
@@ -120,7 +120,7 @@ gulp.task('watch', function() {
   gulp.watch('src/libs/*.js', ['lib']);
   gulp.watch('src/images/*.*', ['images']);
   gulp.watch('src/fonts/*.*', ['fonts']);
-  gulp.watch(['./build/*.html'], ['html']);
+  gulp.watch(['.index.html'], ['html']);
 
 });
 
